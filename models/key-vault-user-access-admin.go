@@ -17,7 +17,7 @@
 
 package models
 
-import "github.com/bloodhoundad/azurehound/v2/models/azure"
+import "https://github.com/AbderrahimBouhdida/AzH/models/azure"
 
 type KeyVaultUserAccessAdmin struct {
 	UserAccessAdmin azure.RoleAssignment `json:"userAccessAdmin"`

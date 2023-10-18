@@ -22,9 +22,9 @@ import (
 	"fmt"
 	"net/url"
 
-	"github.com/bloodhoundad/azurehound/v2/client/query"
-	"github.com/bloodhoundad/azurehound/v2/client/rest"
-	"github.com/bloodhoundad/azurehound/v2/models/azure"
+	"https://github.com/AbderrahimBouhdida/AzH/client/query"
+	"https://github.com/AbderrahimBouhdida/AzH/client/rest"
+	"https://github.com/AbderrahimBouhdida/AzH/models/azure"
 )
 
 func (s *azureClient) GetAzureStorageAccount(ctx context.Context, subscriptionId, groupName, saName, expand string) (*azure.StorageAccount, error) {

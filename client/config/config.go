@@ -20,7 +20,7 @@ package config
 import (
 	"strings"
 
-	"github.com/bloodhoundad/azurehound/v2/constants"
+	"https://github.com/AbderrahimBouhdida/AzH/constants"
 )
 
 type Config struct {

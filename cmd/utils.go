@@ -1,20 +1,3 @@
-// Copyright (C) 2022 Specter Ops, Inc.
-//
-// This file is part of AzureHound.
-//
-// AzureHound is free software: you can redistribute it and/or modify
-// it under the terms of the GNU General Public License as published by
-// the Free Software Foundation, either version 3 of the License, or
-// (at your option) any later version.
-//
-// AzureHound is distributed in the hope that it will be useful,
-// but WITHOUT ANY WARRANTY; without even the implied warranty of
-// MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-// GNU General Public License for more details.
-//
-// You should have received a copy of the GNU General Public License
-// along with this program.  If not, see <https://www.gnu.org/licenses/>.
-
 package cmd
 
 import (
@@ -40,31 +23,29 @@ import (
 	"github.com/spf13/cobra"
 	"golang.org/x/net/proxy"
 
-	"github.com/bloodhoundad/azurehound/v2/client"
-	client_config "github.com/bloodhoundad/azurehound/v2/client/config"
-	"github.com/bloodhoundad/azurehound/v2/client/rest"
-	"github.com/bloodhoundad/azurehound/v2/config"
-	"github.com/bloodhoundad/azurehound/v2/enums"
-	"github.com/bloodhoundad/azurehound/v2/logger"
-	"github.com/bloodhoundad/azurehound/v2/models"
-	"github.com/bloodhoundad/azurehound/v2/pipeline"
-	"github.com/bloodhoundad/azurehound/v2/sinks"
+	"https://github.com/AbderrahimBouhdida/AzH/client"
+	client_config "https://github.com/AbderrahimBouhdida/AzH/client/config"
+	"https://github.com/AbderrahimBouhdida/AzH/client/rest"
+	"https://github.com/AbderrahimBouhdida/AzH/config"
+	"https://github.com/AbderrahimBouhdida/AzH/enums"
+	"https://github.com/AbderrahimBouhdida/AzH/logger"
+	"https://github.com/AbderrahimBouhdida/AzH/models"
+	"https://github.com/AbderrahimBouhdida/AzH/pipeline"
+	"https://github.com/AbderrahimBouhdida/AzH/sinks"
 )
 
 func exit(err error) {
-	log.Error(err, "encountered unrecoverable error")
+	log.Error(err, "error")
 	log.GetSink()
 	os.Exit(1)
 }
 
 func persistentPreRunE(cmd *cobra.Command, args []string) error {
-	// need to set config flag value explicitly
 	if cmd != nil {
 		if configFlag := cmd.Flag(config.ConfigFile.Name).Value.String(); configFlag != "" {
 			config.ConfigFile.Set(configFlag)
 		}
 	}
-
 	config.LoadValues(cmd, config.Options())
 	config.SetAzureDefaults()
 
@@ -146,7 +127,6 @@ func (s proxyDialer) Dial(network string, addr string) (net.Conn, error) {
 			req.SetBasicAuth(s.user, s.pass)
 		}
 
-		// Write request over proxy connection
 		if err := req.Write(conn); err != nil {
 			conn.Close()
 			return nil, fmt.Errorf("unable to connect to %s: %w", addr, err)

@@ -17,7 +17,7 @@
 
 package azure
 
-import "github.com/bloodhoundad/azurehound/v2/enums"
+import "https://github.com/AbderrahimBouhdida/AzH/enums"
 
 type AzureFilesIdentityBasedAuthentication struct {
 	ActiveDirectoryProperties ActiveDirectoryProperties     `json:"activeDirectoryProperties,omitempty"`

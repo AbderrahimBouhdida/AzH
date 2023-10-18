@@ -23,11 +23,11 @@ import (
 	"net/url"
 	"strings"
 
-	"github.com/bloodhoundad/azurehound/v2/client/query"
-	"github.com/bloodhoundad/azurehound/v2/client/rest"
-	"github.com/bloodhoundad/azurehound/v2/constants"
-	"github.com/bloodhoundad/azurehound/v2/enums"
-	"github.com/bloodhoundad/azurehound/v2/models/azure"
+	"https://github.com/AbderrahimBouhdida/AzH/client/query"
+	"https://github.com/AbderrahimBouhdida/AzH/client/rest"
+	"https://github.com/AbderrahimBouhdida/AzH/constants"
+	"https://github.com/AbderrahimBouhdida/AzH/enums"
+	"https://github.com/AbderrahimBouhdida/AzH/models/azure"
 )
 
 func (s *azureClient) GetAzureADGroup(ctx context.Context, objectId string, selectCols []string) (*azure.Group, error) {

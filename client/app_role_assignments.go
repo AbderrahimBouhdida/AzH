@@ -23,10 +23,10 @@ import (
 	"net/url"
 	"strings"
 
-	"github.com/bloodhoundad/azurehound/v2/client/query"
-	"github.com/bloodhoundad/azurehound/v2/client/rest"
-	"github.com/bloodhoundad/azurehound/v2/constants"
-	"github.com/bloodhoundad/azurehound/v2/models/azure"
+	"https://github.com/AbderrahimBouhdida/AzH/client/query"
+	"https://github.com/AbderrahimBouhdida/AzH/client/rest"
+	"https://github.com/AbderrahimBouhdida/AzH/constants"
+	"https://github.com/AbderrahimBouhdida/AzH/models/azure"
 )
 
 func (s *azureClient) GetAzureADAppRoleAssignments(ctx context.Context, servicePrincipalId string, filter, search, orderBy, expand string, selectCols []string, top int32, count bool) (azure.AppRoleAssignmentList, error) {

@@ -21,12 +21,12 @@ import (
 	"io"
 	"os"
 
-	"github.com/bloodhoundad/azurehound/v2/config"
-	"github.com/bloodhoundad/azurehound/v2/constants"
-	logger "github.com/bloodhoundad/azurehound/v2/logger/internal"
 	"github.com/go-logr/logr"
 	"github.com/rs/zerolog"
 	"golang.org/x/sys/windows/svc"
+	"https://github.com/AbderrahimBouhdida/AzH/config"
+	"https://github.com/AbderrahimBouhdida/AzH/constants"
+	logger "https://github.com/AbderrahimBouhdida/AzH/logger/internal"
 )
 
 var eventLogWriter zerolog.LevelWriter

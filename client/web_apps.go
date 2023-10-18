@@ -22,9 +22,9 @@ import (
 	"fmt"
 	"net/url"
 
-	"github.com/bloodhoundad/azurehound/v2/client/query"
-	"github.com/bloodhoundad/azurehound/v2/client/rest"
-	"github.com/bloodhoundad/azurehound/v2/models/azure"
+	"https://github.com/AbderrahimBouhdida/AzH/client/query"
+	"https://github.com/AbderrahimBouhdida/AzH/client/rest"
+	"https://github.com/AbderrahimBouhdida/AzH/models/azure"
 )
 
 func (s *azureClient) GetAzureWebApp(ctx context.Context, subscriptionId, groupName, waName, expand string) (*azure.WebApp, error) {

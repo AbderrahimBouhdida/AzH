@@ -1,20 +1,3 @@
-// Copyright (C) 2022 Specter Ops, Inc.
-//
-// This file is part of AzureHound.
-//
-// AzureHound is free software: you can redistribute it and/or modify
-// it under the terms of the GNU General Public License as published by
-// the Free Software Foundation, either version 3 of the License, or
-// (at your option) any later version.
-//
-// AzureHound is distributed in the hope that it will be useful,
-// but WITHOUT ANY WARRANTY; without even the implied warranty of
-// MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-// GNU General Public License for more details.
-//
-// You should have received a copy of the GNU General Public License
-// along with this program.  If not, see <https://www.gnu.org/licenses/>.
-
 package cmd
 
 import (
@@ -24,25 +7,23 @@ import (
 	"crypto/x509"
 	"crypto/x509/pkix"
 	"encoding/pem"
-	"errors"
 	"fmt"
 	"io/ioutil"
 	"math"
 	"math/big"
 
 	"net/mail"
-	"net/url"
 	"os"
 	"path/filepath"
 	"time"
 
-	"github.com/bloodhoundad/azurehound/v2/config"
-	"github.com/bloodhoundad/azurehound/v2/enums"
 	"github.com/gofrs/uuid"
 	"github.com/manifoldco/promptui"
 	"github.com/spf13/cobra"
 	"github.com/spf13/viper"
 	"github.com/youmark/pkcs8"
+	"https://github.com/AbderrahimBouhdida/AzH/config"
+	"https://github.com/AbderrahimBouhdida/AzH/enums"
 )
 
 func init() {
@@ -72,7 +53,7 @@ func configure() error {
 	)
 
 	// Configure Azure connection
-	if _, region, err := choose("Azure Region", config.AzRegions, 1); err != nil {
+	if _, region, err := choose("Region", config.AzRegions, 1); err != nil {
 		return err
 	} else if tenantId, err := prompt("Directory (tenant) ID", validateGuid, false); err != nil {
 		return err
@@ -106,7 +87,7 @@ func configure() error {
 				config.AzKeyPass.Set(keyPass)
 			}
 		} else if authMethod == enums.UsernamePassword {
-			if upn, err := prompt("Input the User Principal Name", validateUserPrincipalName, false); err != nil {
+			if upn, err := prompt("Input Principal Name", validateUserPrincipalName, false); err != nil {
 				return err
 			} else if password, err := prompt("Input the password", nil, true); err != nil {
 				return err
@@ -122,40 +103,8 @@ func configure() error {
 
 	}
 
-	// Configure BloodHound Enterprise Connection
-	if confirm("Setup connection to BloodHound Enterprise", true) {
-		if bheUrl, err := prompt("BloodHound Enterprise URL", config.ValidateURL, false); err != nil {
-			return err
-		} else if bheTokenId, err := prompt("BloodHound Enterprise Token ID", validateGuid, false); err != nil {
-			return err
-		} else if bheToken, err := prompt("BloodHound Enterprise Token", nil, true); err != nil {
-			return err
-		} else {
-			config.BHEUrl.Set(bheUrl)
-			config.BHETokenId.Set(bheTokenId)
-			config.BHEToken.Set(bheToken)
-		}
-	}
-
-	// Configure Proxy
-	if confirm("Set proxy URL", true) {
-		if proxyURL, err := prompt("Proxy URL", config.ValidateURL, false); err != nil {
-			return err
-		} else {
-			if parsedURL, err := url.Parse(proxyURL); err != nil {
-				return err
-			} else {
-				if parsedURL.Scheme != "https" && parsedURL.Scheme != "http" {
-					return errors.New("unsupported proxy url scheme")
-				} else {
-					config.Proxy.Set(proxyURL)
-				}
-			}
-		}
-	}
-
 	// Configure Logging
-	if confirm("Setup AzureHound logging", true) {
+	if confirm("Setup logging", true) {
 		if idx, _, err := choose("Verbosity", verbosityOptions, 1); err != nil {
 			return err
 		} else if logFile, err := prompt("Log file (optional)", nil, false); err != nil {

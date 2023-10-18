@@ -22,10 +22,10 @@ import (
 	"fmt"
 	"testing"
 
-	"github.com/bloodhoundad/azurehound/v2/client/mocks"
-	"github.com/bloodhoundad/azurehound/v2/models"
-	"github.com/bloodhoundad/azurehound/v2/models/azure"
 	"github.com/golang/mock/gomock"
+	"https://github.com/AbderrahimBouhdida/AzH/client/mocks"
+	"https://github.com/AbderrahimBouhdida/AzH/models"
+	"https://github.com/AbderrahimBouhdida/AzH/models/azure"
 )
 
 func init() {

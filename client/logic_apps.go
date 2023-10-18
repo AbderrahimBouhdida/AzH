@@ -22,9 +22,9 @@ import (
 	"fmt"
 	"net/url"
 
-	"github.com/bloodhoundad/azurehound/v2/client/query"
-	"github.com/bloodhoundad/azurehound/v2/client/rest"
-	"github.com/bloodhoundad/azurehound/v2/models/azure"
+	"https://github.com/AbderrahimBouhdida/AzH/client/query"
+	"https://github.com/AbderrahimBouhdida/AzH/client/rest"
+	"https://github.com/AbderrahimBouhdida/AzH/models/azure"
 )
 
 func (s *azureClient) GetAzureLogicApp(ctx context.Context, subscriptionId, groupName, logicappName, expand string) (*azure.LogicApp, error) {

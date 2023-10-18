@@ -21,7 +21,7 @@ import (
 	"context"
 	"fmt"
 
-	"github.com/bloodhoundad/azurehound/v2/pipeline"
+	"https://github.com/AbderrahimBouhdida/AzH/pipeline"
 )
 
 func WriteToConsole[T any](ctx context.Context, stream <-chan T) {

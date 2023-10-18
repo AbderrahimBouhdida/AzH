@@ -17,7 +17,7 @@
 
 package azure
 
-import "github.com/bloodhoundad/azurehound/v2/enums"
+import "https://github.com/AbderrahimBouhdida/AzH/enums"
 
 type AutomationAccountEncryptionProperties struct {
 	Identity           ManagedIdentity               `json:"identity,omitempty"`

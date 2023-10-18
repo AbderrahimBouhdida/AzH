@@ -23,12 +23,12 @@ import (
 	"os/signal"
 	"time"
 
-	"github.com/bloodhoundad/azurehound/v2/constants"
-	"github.com/bloodhoundad/azurehound/v2/enums"
-	"github.com/bloodhoundad/azurehound/v2/internal"
-	"github.com/bloodhoundad/azurehound/v2/models"
-	"github.com/bloodhoundad/azurehound/v2/pipeline"
 	"github.com/spf13/cobra"
+	"https://github.com/AbderrahimBouhdida/AzH/constants"
+	"https://github.com/AbderrahimBouhdida/AzH/enums"
+	"https://github.com/AbderrahimBouhdida/AzH/internal"
+	"https://github.com/AbderrahimBouhdida/AzH/models"
+	"https://github.com/AbderrahimBouhdida/AzH/pipeline"
 )
 
 func init() {

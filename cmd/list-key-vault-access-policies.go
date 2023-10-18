@@ -24,13 +24,13 @@ import (
 	"os/signal"
 	"time"
 
-	"github.com/bloodhoundad/azurehound/v2/client"
-	"github.com/bloodhoundad/azurehound/v2/config"
-	"github.com/bloodhoundad/azurehound/v2/enums"
-	kinds "github.com/bloodhoundad/azurehound/v2/enums"
-	"github.com/bloodhoundad/azurehound/v2/models"
-	"github.com/bloodhoundad/azurehound/v2/pipeline"
 	"github.com/spf13/cobra"
+	"https://github.com/AbderrahimBouhdida/AzH/client"
+	"https://github.com/AbderrahimBouhdida/AzH/config"
+	"https://github.com/AbderrahimBouhdida/AzH/enums"
+	kinds "https://github.com/AbderrahimBouhdida/AzH/enums"
+	"https://github.com/AbderrahimBouhdida/AzH/models"
+	"https://github.com/AbderrahimBouhdida/AzH/pipeline"
 )
 
 var listKeyVaultAccessPoliciesCmd = &cobra.Command{
