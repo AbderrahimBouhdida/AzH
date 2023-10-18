@@ -1,4 +1,4 @@
-module github.com/bloodhoundad/azurehound/v2
+module github.com/AbderrahimBouhdida/AzH/
 
 go 1.20
 
