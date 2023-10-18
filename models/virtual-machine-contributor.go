@@ -17,7 +17,7 @@
 
 package models
 
-import "https://github.com/AbderrahimBouhdida/AzH/models/azure"
+import "github.com/AbderrahimBouhdida/AzH/models/azure"
 
 type VirtualMachineContributor struct {
 	Contributor      azure.RoleAssignment `json:"contributor"`

@@ -4,8 +4,8 @@ import (
 	"github.com/go-logr/logr"
 	"github.com/spf13/cobra"
 
-	"https://github.com/AbderrahimBouhdida/AzH/config"
-	"https://github.com/AbderrahimBouhdida/AzH/constants"
+	"github.com/AbderrahimBouhdida/AzH/config"
+	"github.com/AbderrahimBouhdida/AzH/constants"
 )
 
 var (

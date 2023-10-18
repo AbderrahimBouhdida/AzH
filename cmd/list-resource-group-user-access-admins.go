@@ -23,12 +23,12 @@ import (
 	"os/signal"
 	"time"
 
+	"github.com/AbderrahimBouhdida/AzH/constants"
+	"github.com/AbderrahimBouhdida/AzH/enums"
+	"github.com/AbderrahimBouhdida/AzH/internal"
+	"github.com/AbderrahimBouhdida/AzH/models"
+	"github.com/AbderrahimBouhdida/AzH/pipeline"
 	"github.com/spf13/cobra"
-	"https://github.com/AbderrahimBouhdida/AzH/constants"
-	"https://github.com/AbderrahimBouhdida/AzH/enums"
-	"https://github.com/AbderrahimBouhdida/AzH/internal"
-	"https://github.com/AbderrahimBouhdida/AzH/models"
-	"https://github.com/AbderrahimBouhdida/AzH/pipeline"
 )
 
 func init() {

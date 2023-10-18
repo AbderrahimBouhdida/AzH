@@ -17,7 +17,7 @@
 
 package azure
 
-import "https://github.com/AbderrahimBouhdida/AzH/enums"
+import "github.com/AbderrahimBouhdida/AzH/enums"
 
 type WorkingHours struct {
 	// The days of the week on which the user works.

@@ -22,10 +22,10 @@ import (
 	"fmt"
 	"net/url"
 
-	"https://github.com/AbderrahimBouhdida/AzH/client/query"
-	"https://github.com/AbderrahimBouhdida/AzH/client/rest"
-	"https://github.com/AbderrahimBouhdida/AzH/constants"
-	"https://github.com/AbderrahimBouhdida/AzH/models/azure"
+	"github.com/AbderrahimBouhdida/AzH/client/query"
+	"github.com/AbderrahimBouhdida/AzH/client/rest"
+	"github.com/AbderrahimBouhdida/AzH/constants"
+	"github.com/AbderrahimBouhdida/AzH/models/azure"
 )
 
 func (s *azureClient) GetAzureADOrganization(ctx context.Context, selectCols []string) (*azure.Organization, error) {

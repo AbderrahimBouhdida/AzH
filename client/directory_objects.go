@@ -23,7 +23,7 @@ import (
 	"fmt"
 	"io"
 
-	"https://github.com/AbderrahimBouhdida/AzH/constants"
+	"github.com/AbderrahimBouhdida/AzH/constants"
 )
 
 func (s *azureClient) GetAzureADDirectoryObject(ctx context.Context, objectId string) (json.RawMessage, error) {

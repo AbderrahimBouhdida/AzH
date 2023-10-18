@@ -20,7 +20,7 @@ package azure
 import (
 	"encoding/json"
 
-	"https://github.com/AbderrahimBouhdida/AzH/enums"
+	"github.com/AbderrahimBouhdida/AzH/enums"
 )
 
 // Represents a device registered in the organization. Devices are created in the cloud using the Device Registration

@@ -21,8 +21,8 @@ import (
 	"io"
 	"os"
 
+	"github.com/AbderrahimBouhdida/AzH/config"
 	"github.com/go-logr/logr"
-	"https://github.com/AbderrahimBouhdida/AzH/config"
 )
 
 var (

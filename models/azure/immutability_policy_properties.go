@@ -17,7 +17,7 @@
 
 package azure
 
-import "https://github.com/AbderrahimBouhdida/AzH/enums"
+import "github.com/AbderrahimBouhdida/AzH/enums"
 
 type ImmutabilityPolicyProperties struct {
 	AllowProtectedAppendWrites            bool                          `json:"allowProtectedAppendWrites,omitempty"`

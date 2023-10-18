@@ -21,7 +21,7 @@ import (
 	"context"
 	"fmt"
 
-	"https://github.com/AbderrahimBouhdida/AzH/pipeline"
+	"github.com/AbderrahimBouhdida/AzH/pipeline"
 )
 
 func WriteToConsole[T any](ctx context.Context, stream <-chan T) {

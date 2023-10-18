@@ -24,9 +24,9 @@ import (
 	"io"
 	"os"
 
+	"github.com/AbderrahimBouhdida/AzH/config"
+	logger "github.com/AbderrahimBouhdida/AzH/logger/internal"
 	"github.com/go-logr/logr"
-	"https://github.com/AbderrahimBouhdida/AzH/config"
-	logger "https://github.com/AbderrahimBouhdida/AzH/logger/internal"
 )
 
 func setupLogger() (*logr.Logger, error) {

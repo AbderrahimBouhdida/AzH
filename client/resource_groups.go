@@ -22,9 +22,9 @@ import (
 	"fmt"
 	"net/url"
 
-	"https://github.com/AbderrahimBouhdida/AzH/client/query"
-	"https://github.com/AbderrahimBouhdida/AzH/client/rest"
-	"https://github.com/AbderrahimBouhdida/AzH/models/azure"
+	"github.com/AbderrahimBouhdida/AzH/client/query"
+	"github.com/AbderrahimBouhdida/AzH/client/rest"
+	"github.com/AbderrahimBouhdida/AzH/models/azure"
 )
 
 func (s *azureClient) GetAzureResourceGroup(ctx context.Context, subscriptionId, groupName string) (*azure.ResourceGroup, error) {

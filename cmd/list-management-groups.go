@@ -23,11 +23,11 @@ import (
 	"os/signal"
 	"time"
 
+	"github.com/AbderrahimBouhdida/AzH/client"
+	"github.com/AbderrahimBouhdida/AzH/config"
+	"github.com/AbderrahimBouhdida/AzH/enums"
+	"github.com/AbderrahimBouhdida/AzH/models"
 	"github.com/spf13/cobra"
-	"https://github.com/AbderrahimBouhdida/AzH/client"
-	"https://github.com/AbderrahimBouhdida/AzH/config"
-	"https://github.com/AbderrahimBouhdida/AzH/enums"
-	"https://github.com/AbderrahimBouhdida/AzH/models"
 )
 
 func init() {

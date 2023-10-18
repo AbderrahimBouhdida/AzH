@@ -24,9 +24,9 @@ import (
 	"runtime"
 	"strings"
 
-	config "https://github.com/AbderrahimBouhdida/AzH/config/internal"
-	"https://github.com/AbderrahimBouhdida/AzH/constants"
-	"https://github.com/AbderrahimBouhdida/AzH/enums"
+	config "github.com/AbderrahimBouhdida/AzH/config/internal"
+	"github.com/AbderrahimBouhdida/AzH/constants"
+	"github.com/AbderrahimBouhdida/AzH/enums"
 )
 
 type Config = config.Config

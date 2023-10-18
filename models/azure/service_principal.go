@@ -20,7 +20,7 @@ package azure
 import (
 	"encoding/json"
 
-	"https://github.com/AbderrahimBouhdida/AzH/enums"
+	"github.com/AbderrahimBouhdida/AzH/enums"
 )
 
 // Represents an instance of an application in a directory.

@@ -24,10 +24,10 @@ import (
 	"os/signal"
 	"time"
 
+	"github.com/AbderrahimBouhdida/AzH/client"
+	"github.com/AbderrahimBouhdida/AzH/config"
+	"github.com/AbderrahimBouhdida/AzH/pipeline"
 	"github.com/spf13/cobra"
-	"https://github.com/AbderrahimBouhdida/AzH/client"
-	"https://github.com/AbderrahimBouhdida/AzH/config"
-	"https://github.com/AbderrahimBouhdida/AzH/pipeline"
 )
 
 func init() {

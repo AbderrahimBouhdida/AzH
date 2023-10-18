@@ -29,7 +29,7 @@ import (
 	"strings"
 	"time"
 
-	"https://github.com/AbderrahimBouhdida/AzH/constants"
+	"github.com/AbderrahimBouhdida/AzH/constants"
 )
 
 func NewHTTPClient(proxyUrl string) (*http.Client, error) {

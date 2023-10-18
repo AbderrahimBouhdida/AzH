@@ -17,7 +17,7 @@
 
 package models
 
-import "https://github.com/AbderrahimBouhdida/AzH/models/azure"
+import "github.com/AbderrahimBouhdida/AzH/models/azure"
 
 type StorageContainer struct {
 	azure.StorageContainer

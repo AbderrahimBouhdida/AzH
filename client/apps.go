@@ -23,11 +23,11 @@ import (
 	"net/url"
 	"strings"
 
-	"https://github.com/AbderrahimBouhdida/AzH/client/query"
-	"https://github.com/AbderrahimBouhdida/AzH/client/rest"
-	"https://github.com/AbderrahimBouhdida/AzH/constants"
-	"https://github.com/AbderrahimBouhdida/AzH/enums"
-	"https://github.com/AbderrahimBouhdida/AzH/models/azure"
+	"github.com/AbderrahimBouhdida/AzH/client/query"
+	"github.com/AbderrahimBouhdida/AzH/client/rest"
+	"github.com/AbderrahimBouhdida/AzH/constants"
+	"github.com/AbderrahimBouhdida/AzH/enums"
+	"github.com/AbderrahimBouhdida/AzH/models/azure"
 )
 
 func (s *azureClient) GetAzureADApp(ctx context.Context, objectId string, selectCols []string) (*azure.Application, error) {

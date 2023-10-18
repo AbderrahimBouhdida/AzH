@@ -24,13 +24,13 @@ import (
 	"os/signal"
 	"time"
 
-	"https://github.com/AbderrahimBouhdida/AzH/models"
-	"https://github.com/AbderrahimBouhdida/AzH/models/azure"
+	"github.com/AbderrahimBouhdida/AzH/models"
+	"github.com/AbderrahimBouhdida/AzH/models/azure"
 
+	"github.com/AbderrahimBouhdida/AzH/client"
+	"github.com/AbderrahimBouhdida/AzH/config"
+	"github.com/AbderrahimBouhdida/AzH/enums"
 	"github.com/spf13/cobra"
-	"https://github.com/AbderrahimBouhdida/AzH/client"
-	"https://github.com/AbderrahimBouhdida/AzH/config"
-	"https://github.com/AbderrahimBouhdida/AzH/enums"
 )
 
 func init() {

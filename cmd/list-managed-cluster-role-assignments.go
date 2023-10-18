@@ -26,11 +26,11 @@ import (
 	"sync"
 	"time"
 
+	"github.com/AbderrahimBouhdida/AzH/client"
+	"github.com/AbderrahimBouhdida/AzH/enums"
+	"github.com/AbderrahimBouhdida/AzH/models"
+	"github.com/AbderrahimBouhdida/AzH/pipeline"
 	"github.com/spf13/cobra"
-	"https://github.com/AbderrahimBouhdida/AzH/client"
-	"https://github.com/AbderrahimBouhdida/AzH/enums"
-	"https://github.com/AbderrahimBouhdida/AzH/models"
-	"https://github.com/AbderrahimBouhdida/AzH/pipeline"
 )
 
 func init() {

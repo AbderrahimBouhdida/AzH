@@ -5,8 +5,8 @@ import (
 
 	"golang.org/x/sys/windows/svc"
 
-	"https://github.com/AbderrahimBouhdida/AzH/cmd"
-	"https://github.com/AbderrahimBouhdida/AzH/constants"
+	"github.com/AbderrahimBouhdida/AzH/cmd"
+	"github.com/AbderrahimBouhdida/AzH/constants"
 )
 
 func main() {

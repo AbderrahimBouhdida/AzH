@@ -18,7 +18,7 @@
 package azure
 
 import (
-	"https://github.com/AbderrahimBouhdida/AzH/enums"
+	"github.com/AbderrahimBouhdida/AzH/enums"
 )
 
 // Configuration settings to automatically notify the sender of an incoming email with a message from the signed-in

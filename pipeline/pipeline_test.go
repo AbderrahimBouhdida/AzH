@@ -23,7 +23,7 @@ import (
 	"testing"
 	"time"
 
-	"https://github.com/AbderrahimBouhdida/AzH/pipeline"
+	"github.com/AbderrahimBouhdida/AzH/pipeline"
 )
 
 func TestBatch(t *testing.T) {

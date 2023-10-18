@@ -21,9 +21,9 @@ import (
 	"fmt"
 	"net/url"
 
-	client "https://github.com/AbderrahimBouhdida/AzH/client/config"
-	config "https://github.com/AbderrahimBouhdida/AzH/config/internal"
-	"https://github.com/AbderrahimBouhdida/AzH/constants"
+	client "github.com/AbderrahimBouhdida/AzH/client/config"
+	config "github.com/AbderrahimBouhdida/AzH/config/internal"
+	"github.com/AbderrahimBouhdida/AzH/constants"
 )
 
 var Init = config.Init

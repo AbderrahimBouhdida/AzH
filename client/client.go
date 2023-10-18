@@ -25,9 +25,9 @@ import (
 
 	"encoding/json"
 
-	"https://github.com/AbderrahimBouhdida/AzH/client/config"
-	"https://github.com/AbderrahimBouhdida/AzH/client/rest"
-	"https://github.com/AbderrahimBouhdida/AzH/models/azure"
+	"github.com/AbderrahimBouhdida/AzH/client/config"
+	"github.com/AbderrahimBouhdida/AzH/client/rest"
+	"github.com/AbderrahimBouhdida/AzH/models/azure"
 )
 
 func NewClient(config config.Config) (AzureClient, error) {

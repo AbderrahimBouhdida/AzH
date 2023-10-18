@@ -18,7 +18,7 @@
 package azure
 
 import (
-	"https://github.com/AbderrahimBouhdida/AzH/enums"
+	"github.com/AbderrahimBouhdida/AzH/enums"
 )
 
 // Describes the properties of a virtual machine instance view for available patch summary.

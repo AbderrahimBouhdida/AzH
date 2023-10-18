@@ -17,13 +17,13 @@ import (
 	"path/filepath"
 	"time"
 
+	"github.com/AbderrahimBouhdida/AzH/config"
+	"github.com/AbderrahimBouhdida/AzH/enums"
 	"github.com/gofrs/uuid"
 	"github.com/manifoldco/promptui"
 	"github.com/spf13/cobra"
 	"github.com/spf13/viper"
 	"github.com/youmark/pkcs8"
-	"https://github.com/AbderrahimBouhdida/AzH/config"
-	"https://github.com/AbderrahimBouhdida/AzH/enums"
 )
 
 func init() {

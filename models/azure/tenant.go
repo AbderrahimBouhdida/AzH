@@ -17,7 +17,7 @@
 
 package azure
 
-import "https://github.com/AbderrahimBouhdida/AzH/enums"
+import "github.com/AbderrahimBouhdida/AzH/enums"
 
 type Tenant struct {
 	Country               string               `json:"country,omitempty"`               // Country/region name of the address for the tenant.

@@ -6,7 +6,7 @@ import (
 	"sync"
 	"time"
 
-	"https://github.com/AbderrahimBouhdida/AzH/internal"
+	"github.com/AbderrahimBouhdida/AzH/internal"
 )
 
 type Result[T any] struct {

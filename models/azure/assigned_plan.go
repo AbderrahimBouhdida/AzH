@@ -18,8 +18,8 @@
 package azure
 
 import (
+	"github.com/AbderrahimBouhdida/AzH/enums"
 	"github.com/gofrs/uuid"
-	"https://github.com/AbderrahimBouhdida/AzH/enums"
 )
 
 // Represents a plan assigned to user and organization entities.

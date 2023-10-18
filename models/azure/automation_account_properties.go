@@ -17,7 +17,7 @@
 
 package azure
 
-import "https://github.com/AbderrahimBouhdida/AzH/enums"
+import "github.com/AbderrahimBouhdida/AzH/enums"
 
 type AutomationAccountProperties struct {
 	AutomationHybridServiceUrl string                                `json:"automationHybridServiceUrl,omitempty"`

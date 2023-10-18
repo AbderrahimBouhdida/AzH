@@ -32,8 +32,8 @@ import (
 	"sync"
 	"time"
 
-	"https://github.com/AbderrahimBouhdida/AzH/client/config"
-	"https://github.com/AbderrahimBouhdida/AzH/constants"
+	"github.com/AbderrahimBouhdida/AzH/client/config"
+	"github.com/AbderrahimBouhdida/AzH/constants"
 )
 
 type RestClient interface {

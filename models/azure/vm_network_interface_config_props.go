@@ -17,7 +17,7 @@
 
 package azure
 
-import "https://github.com/AbderrahimBouhdida/AzH/enums"
+import "github.com/AbderrahimBouhdida/AzH/enums"
 
 type VMNetworkInterfaceConfigurationProperties struct {
 	// Specify what happens to the network interface when the VM is deleted.

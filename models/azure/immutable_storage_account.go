@@ -17,7 +17,7 @@
 
 package azure
 
-import "https://github.com/AbderrahimBouhdida/AzH/enums"
+import "github.com/AbderrahimBouhdida/AzH/enums"
 
 type ImmutableStorageAccount struct {
 	Enabled            bool                                `json:"enabled,omitempty"`

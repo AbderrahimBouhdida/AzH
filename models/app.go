@@ -18,7 +18,7 @@
 package models
 
 import (
-	"https://github.com/AbderrahimBouhdida/AzH/models/azure"
+	"github.com/AbderrahimBouhdida/AzH/models/azure"
 )
 
 type App struct {

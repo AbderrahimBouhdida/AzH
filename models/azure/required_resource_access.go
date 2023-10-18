@@ -18,8 +18,8 @@
 package azure
 
 import (
+	"github.com/AbderrahimBouhdida/AzH/enums"
 	"github.com/gofrs/uuid"
-	"https://github.com/AbderrahimBouhdida/AzH/enums"
 )
 
 // Object used to specify an OAuth 2.0 permission scope or an app role that an application requires.

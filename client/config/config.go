@@ -20,7 +20,7 @@ package config
 import (
 	"strings"
 
-	"https://github.com/AbderrahimBouhdida/AzH/constants"
+	"github.com/AbderrahimBouhdida/AzH/constants"
 )
 
 type Config struct {

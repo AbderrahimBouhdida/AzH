@@ -17,7 +17,7 @@
 
 package azure
 
-import "https://github.com/AbderrahimBouhdida/AzH/enums"
+import "github.com/AbderrahimBouhdida/AzH/enums"
 
 type AzureStorageInfoValue struct {
 	AccessKey   string                  `json:"accessKey,omitempty"`

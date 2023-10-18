@@ -20,7 +20,7 @@ package azure
 import (
 	"encoding/json"
 
-	"https://github.com/AbderrahimBouhdida/AzH/enums"
+	"github.com/AbderrahimBouhdida/AzH/enums"
 )
 
 // Represents an Azure Active Directory (Azure AD) group, which can be a Microsoft 365 group, or a security group.

@@ -24,8 +24,8 @@ import (
 	"fmt"
 	"os"
 
-	"https://github.com/AbderrahimBouhdida/AzH/cmd"
-	"https://github.com/AbderrahimBouhdida/AzH/constants"
+	"github.com/AbderrahimBouhdida/AzH/cmd"
+	"github.com/AbderrahimBouhdida/AzH/constants"
 )
 
 func main() {

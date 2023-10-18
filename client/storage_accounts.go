@@ -22,9 +22,9 @@ import (
 	"fmt"
 	"net/url"
 
-	"https://github.com/AbderrahimBouhdida/AzH/client/query"
-	"https://github.com/AbderrahimBouhdida/AzH/client/rest"
-	"https://github.com/AbderrahimBouhdida/AzH/models/azure"
+	"github.com/AbderrahimBouhdida/AzH/client/query"
+	"github.com/AbderrahimBouhdida/AzH/client/rest"
+	"github.com/AbderrahimBouhdida/AzH/models/azure"
 )
 
 func (s *azureClient) GetAzureStorageAccount(ctx context.Context, subscriptionId, groupName, saName, expand string) (*azure.StorageAccount, error) {

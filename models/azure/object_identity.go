@@ -17,7 +17,7 @@
 
 package azure
 
-import "https://github.com/AbderrahimBouhdida/AzH/enums"
+import "github.com/AbderrahimBouhdida/AzH/enums"
 
 // Represents an identity used to sign in to a user account. An identity can be provided by Microsoft (a.k.a. local
 // account), by organizations, or by 3rd party identity providers such as Facebook or Google that are tied to a user

@@ -18,7 +18,7 @@
 package azure
 
 import (
-	"https://github.com/AbderrahimBouhdida/AzH/enums"
+	"github.com/AbderrahimBouhdida/AzH/enums"
 )
 
 // Properties of the vault

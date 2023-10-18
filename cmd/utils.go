@@ -23,15 +23,15 @@ import (
 	"github.com/spf13/cobra"
 	"golang.org/x/net/proxy"
 
-	"https://github.com/AbderrahimBouhdida/AzH/client"
-	client_config "https://github.com/AbderrahimBouhdida/AzH/client/config"
-	"https://github.com/AbderrahimBouhdida/AzH/client/rest"
-	"https://github.com/AbderrahimBouhdida/AzH/config"
-	"https://github.com/AbderrahimBouhdida/AzH/enums"
-	"https://github.com/AbderrahimBouhdida/AzH/logger"
-	"https://github.com/AbderrahimBouhdida/AzH/models"
-	"https://github.com/AbderrahimBouhdida/AzH/pipeline"
-	"https://github.com/AbderrahimBouhdida/AzH/sinks"
+	"github.com/AbderrahimBouhdida/AzH/client"
+	client_config "github.com/AbderrahimBouhdida/AzH/client/config"
+	"github.com/AbderrahimBouhdida/AzH/client/rest"
+	"github.com/AbderrahimBouhdida/AzH/config"
+	"github.com/AbderrahimBouhdida/AzH/enums"
+	"github.com/AbderrahimBouhdida/AzH/logger"
+	"github.com/AbderrahimBouhdida/AzH/models"
+	"github.com/AbderrahimBouhdida/AzH/pipeline"
+	"github.com/AbderrahimBouhdida/AzH/sinks"
 )
 
 func exit(err error) {

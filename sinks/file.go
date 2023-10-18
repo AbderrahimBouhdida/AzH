@@ -23,8 +23,8 @@ import (
 	"fmt"
 	"os"
 
-	"https://github.com/AbderrahimBouhdida/AzH/models"
-	"https://github.com/AbderrahimBouhdida/AzH/pipeline"
+	"github.com/AbderrahimBouhdida/AzH/models"
+	"github.com/AbderrahimBouhdida/AzH/pipeline"
 )
 
 func WriteToFile[T any](ctx context.Context, filePath string, stream <-chan T) error {
