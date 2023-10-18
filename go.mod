@@ -7,7 +7,6 @@ require (
 	github.com/gofrs/uuid v4.1.0+incompatible
 	github.com/golang-jwt/jwt v3.2.2+incompatible
 	github.com/golang/mock v1.6.0
-	github.com/judwhite/go-svc v1.2.1
 	github.com/manifoldco/promptui v0.9.0
 	github.com/rs/zerolog v1.26.0
 	github.com/spf13/cobra v1.3.0

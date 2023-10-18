@@ -61,13 +61,8 @@ func listStorageContainersCmdImpl(cmd *cobra.Command, args []string) {
 
 func listStorageContainers(ctx context.Context, client client.AzureClient, storageAccounts <-chan interface{}) <-chan interface{} {
 	var (
-		out = make(chan interface{})
-		ids = make(chan interface{})
-		// The original size of the demuxxer cascaded into error messages for a lot of collection steps.
-		// Decreasing the demuxxer size only here is sufficient to prevent the cascade
-		// The error message with higher values for size is
-		// "The request was throttled."
-		// See issue #7: https://github.com/bloodhoundad/azurehound/issues/7
+		out     = make(chan interface{})
+		ids     = make(chan interface{})
 		streams = pipeline.Demux(ctx.Done(), ids, 2)
 		wg      sync.WaitGroup
 	)

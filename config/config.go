@@ -240,7 +240,7 @@ var (
 	BHEUrl = Config{
 		Name:       "instance",
 		Shorthand:  "i",
-		Usage:      "The BloodHound Enterprise instance URL.",
+		Usage:      "The  URL.",
 		Persistent: true,
 		Required:   true,
 		Default:    "",
@@ -249,7 +249,7 @@ var (
 	BHEToken = Config{
 		Name:       "token",
 		Shorthand:  "",
-		Usage:      "The BloodHound Enterprise token.",
+		Usage:      "Enterprise token.",
 		Persistent: true,
 		Required:   true,
 		Default:    "",
@@ -258,7 +258,7 @@ var (
 	BHETokenId = Config{
 		Name:       "tokenId",
 		Shorthand:  "",
-		Usage:      "The BloodHound Enterprise token ID.",
+		Usage:      "token ID.",
 		Persistent: true,
 		Required:   true,
 		Default:    "",
@@ -307,12 +307,6 @@ var (
 		AzPassword,
 		AzSubId,
 		AzMgmtGroupId,
-	}
-
-	BloodHoundEnterpriseConfig = []Config{
-		BHEUrl,
-		BHETokenId,
-		BHEToken,
 	}
 )
 
